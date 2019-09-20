@@ -1,24 +1,7 @@
-# README
+# use guide
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. install docker and docker-compose
+2. docker-compose up 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. useful command docker-compose run web 
+   docker-compose build (when Gemfile or Dockerfile changed)
