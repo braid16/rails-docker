@@ -16,12 +16,12 @@ RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
 
 # 如果需要安装其他依赖，修改这段内容
 RUN apt-get update && apt-get install -y --no-install-recommends \
-  postgresql-client
+  postgresql-client vim
 
 # 设置 gem 中国镜像，并安装 rails
 RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/ &&\
     bundle config mirror.https://rubygems.org https://gems.ruby-china.com &&\
-    gem install rails -v 7.0.1
+    gem install rails
 
 # 命令位置
 WORKDIR /app
